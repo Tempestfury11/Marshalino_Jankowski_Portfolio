@@ -1,30 +1,32 @@
 <template>
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-filter">
-                <button @click="filterProjects('all')" :class="{ 'active': activeFilter === 'all' }">All</button>
-                <button @click="filterProjects('vue')" :class="{ 'active': activeFilter === 'vue' }">Vue.js</button>
-                <button @click="filterProjects('react')" :class="{ 'active': activeFilter === 'react' }">React</button>
-                <button @click="filterProjects('next')" :class="{ 'active': activeFilter === 'next' }">Next.js</button>
-                <button @click="filterProjects('nuxt')" :class="{ 'active': activeFilter === 'nuxt' }">Nuxt.js</button>
-                <button @click="filterProjects('wordpress')"
-                    :class="{ 'active': activeFilter === 'wordpress' }">WordPress</button>
-            </div>
-            <div class="project-list">
-                <div v-for="project in filteredProjects" :key="project.id" class="project-item">
-                    <img :src="project.image" alt="Project Image" class="project-image" />
-                    <div class="project-details">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                        <div class="buttons">
-                                <a target="_blank" :href="project.liveLink">
-                                    <button>View Live</button>
-                                </a>
-                                <a target="_blank" :href="project.githubLink">
-                                    <button>View GitHub</button>
-                                </a>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="project-filter">
+                        <button @click="filterProjects('all')" :class="{ 'active': activeFilter === 'all' }">All</button>
+                        <button @click="filterProjects('next')"
+                            :class="{ 'active': activeFilter === 'next' }">Next.js</button>
+                        <button @click="filterProjects('nuxt')"
+                            :class="{ 'active': activeFilter === 'nuxt' }">Nuxt.js</button>
+                    </div>
+                    <div class="project-list">
+                        <div v-for="project in filteredProjects" :key="project.id" class="project-item">
+                            <img :src="project.image" alt="Project Image" class="project-image" />
+                            <div class="project-details">
+                                <h3>{{ project.title }}</h3>
+                                <p>{{ project.description }}</p>
+                                <div class="buttons">
+                                    <a target="_blank" :href="project.liveLink">
+                                        <button>View Live</button>
+                                    </a>
+                                    <a target="_blank" :href="project.githubLink">
+                                        <button>View GitHub</button>
+                                    </a>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,6 +97,7 @@ export default {
 .project-filter button.active {
     color: #4af7ff;
 }
+
 .project-filter button:hover {
     color: #ff66a2;
 }
