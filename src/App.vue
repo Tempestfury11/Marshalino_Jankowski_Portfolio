@@ -27,6 +27,7 @@ import Projects from './components/ProjectsView.vue';
 * {
   font-family: 'Tokyo2097', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 section{
