@@ -1,8 +1,8 @@
 <template>
     <section id="testimonials">
         <div class="container">
-            <h2 class="section-title">Testimonials</h2>
             <div class="row">
+                <h2 class="section-title">Testimonials</h2>
                 <div class="col-md-4 mt-5" v-for="(TestimonialsArray, index) in TestimonialsArray"
                     :key="index">
                     <div class="testimonial-grid">
@@ -81,7 +81,6 @@ export default {
 #testimonials {
     background-color: #1c1c1c;
     color: #4af7ff;
-    padding: 60px 0;
     display: flex;
     text-align: center;
     justify-content: center;

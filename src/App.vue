@@ -4,6 +4,7 @@
 <About/>
 <Timeline/>
 <Testimonials/>
+<Projects/>
 </template>
 
 <script setup>
@@ -12,6 +13,7 @@ import Home from './components/HomeView.vue';
 import About from './components/AboutView.vue';
 import Timeline from './components/Timeline.vue';
 import Testimonials from './components/TestimonialsView.vue'
+import Projects from './components/ProjectsView.vue';
 </script>
 
 <style>

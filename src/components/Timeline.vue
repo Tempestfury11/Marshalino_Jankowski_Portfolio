@@ -9,14 +9,16 @@
                             <div class="timeline-content">
                                 <h3>December 2022</h3>
                                 <h4>CloudZA - Junior Web Developer</h4>
-                                <p>I nurtured positive relationships with clients and
-                                    technology partners, guiding them in leveraging AWS
-                                    and enhancing digital media strategy. I managed the
-                                    development of advanced solutions, led a global ad
-                                    tech team, and stayed updated on platform
-                                    knowledge. Additionally, I organized a comprehensive
-                                    database for client information, tech resources, and
-                                    learning materials.
+                                <p>
+                                    During my time at Cloudza, who are a South African
+                                    cloud managed services provider. I was mentored and
+                                    trained by a team of Certified AWS Professionals who
+                                    helped me dive deeper into the cloud space. We
+                                    worked and collaborated on multiple projects using
+                                    AWS tools and services to design and refactor solutions
+                                    for clients in various sectors such as education,
+                                    healthcare as well as working with small to medium
+                                    businesses
                                 </p>
                             </div>
                         </div>
@@ -25,15 +27,14 @@
                                 <h3>September 2022 - December 2022</h3>
                                 <h4>LC Studio - Web Developer Intern</h4>
                                 <p>
-                                    During my web development internship at LC Studio, I
-                                    immersed myself in the field, collaborating closely with
-                                    seasoned developers to assist in coding, testing, and
-                                    debugging tasks. Actively contributing to real projects, I
-                                    honed my skills in either front-end or back-end
-                                    development, gaining valuable insights into coding
-                                    languages and frameworks within the professional
-                                    realm of web development while also Achieving My AWS Cloud
-                                    Practitioner
+                                    During my time at LC Studio, I took part in a learning
+                                    journey which covered various technologies such as
+                                    HTML, CSS, Javascript, BOOTSTRAP, VUE.js, NODE.js,
+                                    MYSQL, SEO and Wordpress. While be mentored and
+                                    trained by a team of seasoned senior developers who
+                                    gave me the right mentorship to equip me with the
+                                    tools I needed to enter the web development industry
+                                    and gain my AWS Certified Cloud Practitioner
                                 </p>
                                 <button @click="downloadCV('AWS Cloud Practitioner')">AWS Cloud Practitioner</button>
                             </div>
@@ -90,31 +91,31 @@ import fullstackCV from '../assets/fullstack_certification.pdf';
 import mysqlCV from '../assets/mysql_certification.pdf';
 
 export default {
-  methods: {
-    downloadCV(type) {
-      let link;
-      switch (type) {
-        case 'AWS Cloud Practitioner':
-          link = awsCV;
-          break;
-        case 'Fullstack Web Development':
-          link = fullstackCV;
-          break;
-        case 'MySQL Certification':
-          link = mysqlCV;
-          break;
-        default:
-          return;
-      }
+    methods: {
+        downloadCV(type) {
+            let link;
+            switch (type) {
+                case 'AWS Cloud Practitioner':
+                    link = awsCV;
+                    break;
+                case 'Fullstack Web Development':
+                    link = fullstackCV;
+                    break;
+                case 'MySQL Certification':
+                    link = mysqlCV;
+                    break;
+                default:
+                    return;
+            }
 
-      const anchor = document.createElement('a');
-      anchor.href = link;
-      anchor.download = `Marshalino_Jankowski_${type.replace(/\s+/g, '_')}_Certification.pdf`;
-      document.body.appendChild(anchor);
-      anchor.click();
-      document.body.removeChild(anchor);
+            const anchor = document.createElement('a');
+            anchor.href = link;
+            anchor.download = `Marshalino_Jankowski_${type.replace(/\s+/g, '_')}_Certification.pdf`;
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+        },
     },
-  },
 };
 </script>
   
@@ -138,7 +139,7 @@ export default {
     padding: 20px;
     margin: 20px;
     background: #1c1c1c;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 102, 162, 0.5);
     overflow: hidden;
     border: #4af7ff 4px solid;

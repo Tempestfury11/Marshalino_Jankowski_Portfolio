@@ -7,19 +7,7 @@
                         <div class="edgeRunnerCard">
                             <img src="https://i.postimg.cc/dt5L9rRg/me.jpg" alt="Edge Runner Image"
                                 class="img-fluid rounded-circle shadow-1-strong">
-                            <h2>Tech Stack</h2>
-                            <p>
-                                HTML
-                                CSS
-                                JAVASCRIPT
-                                BOOTSTRAP
-                                MYSQL
-                                NODE
-                                VUE.JS
-                                React
-                                WordPress
-                                SEO
-                            </p>
+                                <h2>Hi there, Im Marshalino Jankowski </h2>
                             <div class="buttons">
                                 <a target="_blank" href="https://www.linkedin.com/in/marshalino-jankowski-385861247/">
                                     <button>LinkedIn</button>
@@ -33,24 +21,37 @@
                     </div>
                     <div class="col-md-6 pt-5 pb-5">
                         <p>
-                            Hey, I'm Marshalino Jankowski, a junior web developer passionate about tech and web development.
-                            Certified in full-stack web development and AWS, I excelled at LifeChoices Coding Academy and
-                            honed
-                            my skills at LC Studio.
+                            I am a Passionate Web Developer who has a AWS CCP and a
+                            FullStack Web Development course. Proficient in HTML, CSS,
+                            Bootstrap, JavaScript, MySQL, Node.js, Vue.js, React, WordPress,
+                            and SEO. Adept at designing and implementing systems, I
+                            excel as both a team player and lone wolf. Demonstrating
+                            active listening, problem-solving, and conflict management, I
+                            bring a goal-driven work ethic and openness to change.
                         </p>
+                        <h2>Tech Stack</h2>
                         <p>
-                            Proficient in HTML, CSS, JavaScript, MySQL, Node, Vue.js, React, SEO, and WordPress, I stay
-                            ahead
-                            with regular courses. At CloudZA, I managed client relationships, led a global ad tech team, and
-                            stayed updated on emerging tech.
+                            HTML
+                            CSS
+                            JAVASCRIPT
+                            BOOTSTRAP
+                            MYSQL
+                            NODE
+                            VUE.JS
+                            React
+                            WordPress
+                            SEO
                         </p>
+                        <h2>Soft Skills</h2>
                         <p>
-                            I love overcoming challenges, from fixing bugs to turning designs into reality. With strong soft
-                            skills, I'm a team player and a self-managed lone wolf. Beyond coding, I enjoy music, football,
-                            and
-                            gaming. Looking ahead, I aspire to design more applications and dive deeper into the cloud
-                            space.
-                            Let's bring your digital ideas to life!
+                            ACTIVE LISTENING
+                            PROBLEM SOLVING
+                            CONFLICT MANAGEMENT
+                            SELF-MANAGED
+                            OPEN TO CHANGE
+                            GOAL DRIVEN
+                            SOUNDWORK ETHIC
+                            OPEN TO FEEDBACK
                         </p>
                         <div class="container">
                             <div class="row">
@@ -103,10 +104,9 @@ export default {
 
 .edgeRunnerCard {
     background-color: #1c1c1c;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 102, 162, 0.5);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     color: #4af7ff;
     border: #4af7ff 3px solid;
@@ -126,7 +126,7 @@ export default {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: #4af7ff 3px solid;
-    color: #4af7ff ;
+    color: #4af7ff;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
