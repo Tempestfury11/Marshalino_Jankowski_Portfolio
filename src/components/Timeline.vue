@@ -1,7 +1,7 @@
 <template>
     <section id="timeline-sec">
         <div class="container">
-            <div class="row pt-5 pb-5">
+            <div class="row">
                 <h1>Timeline</h1>
                 <div class="col-md-12">
                     <div class="timeline">
