@@ -1,9 +1,9 @@
 <template>
     <section id="testimonials">
         <div class="container">
-            <div class="row">
+            <div class="row pt-5">
                 <h3 class="heading">My Testimonials</h3>
-                <div v-for="(TestimonialsArray, index) in TestimonialsArray" :key="index" class="col-md-4">
+                <div v-for="(TestimonialsArray, index) in TestimonialsArray" :key="index" class="col-md-4 pt-1 pb-1">
                     <div class="card mb-3 text-center" :style="{ boxShadow: cardShadow }">
                         <div class="card-body">
                             <p class="text">{{ TestimonialsArray.text }}</p>

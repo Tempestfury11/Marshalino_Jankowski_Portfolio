@@ -74,7 +74,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://i.postimg.cc/L5DGRDJ2/pngegg-1.png');
+    background-image: url('https://i.postimg.cc/yNsxMJKB/pngegg-4.png');
 }
 .name{
   font-size: 4rem;
