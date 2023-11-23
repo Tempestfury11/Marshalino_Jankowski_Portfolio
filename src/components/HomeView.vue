@@ -27,9 +27,9 @@
           src="https://i.postimg.cc/W1NYT0V1/red-removebg-preview.png" alt="Marshalino-Jankowski">
         </div>
         <div class="col-sm-12 col-md-6">
-          <h3>Hello, my name is</h3>
-            <h1>{{ typedText }}</h1>
-            <h2>Junior Web Developer</h2>
+          <h3 class="hello">Hello, my name is</h3>
+            <h1 class="smallname">{{ typedText }}</h1>
+            <h2 class="position">Junior Web Developer</h2>
         </div>
       </div>
     </div> 
@@ -74,11 +74,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://i.postimg.cc/yNsxMJKB/pngegg-4.png');
+    background-image: url('https://i.postimg.cc/MpkmjY7D/pngegg-7.png');
 }
 .name{
   font-size: 4rem;
   font-weight: bold;
+}
+.smallname{
+  font-size: 3rem;
 }
 .position{
   color: #009bdf;
