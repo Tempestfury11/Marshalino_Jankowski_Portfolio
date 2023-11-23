@@ -5,7 +5,7 @@
                 <img src="https://i.postimg.cc/25wNNFHx/Screenshot-2023-11-15-121925-removebg-preview.png" 
                 alt="Logo" width="30" height="24"
                 class="d-inline-block align-text-top">
-            </a>
+              </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,28 +59,21 @@ export default {
 <style scoped>
 .cyberpunk-navbar {
   background-color: transparent;
-  padding: 10px 20px;
+  padding: 10px 30px;
   transition: background-color 0.3s ease-in-out;
 }
-
 .cyberpunk-navbar.sticky {
-  background-color: black;
+  background-color: #758398;
 }
-
 .navbar-brand,
 .nav-link {
-    color: white;
+    color: black;
     transition: all 0.3s ease-in-out;
-}
-
-.navbar-toggler-icon {
-    background-color: #4af7ff;
 }
 
 .nav-link:hover {
     color: #4af7ff;
-    border-top:#4af7ff 1px solid; ;
-    border-bottom:#4af7ff 1px solid; ;
+    border-bottom:#4af7ff 1px solid;
 }
 
 .nav-item {
@@ -90,10 +83,5 @@ export default {
 .navbar-nav {
     display: flex;
     align-items: center;
-}
-
-
-nav.sticky{
-    background-color: black;
 }
 </style>

@@ -2,11 +2,14 @@
   <section id="home">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="headingtext">
+        <div class="col-md-6 pt-5 pb-5">
+          <h3>Hello, my name is</h3>
             <h1>{{ typedText }}</h1>
             <h2>Junior Web Developer</h2>
-          </div>
+        </div>
+        <div class="col-md-6 pt-5 pb-5">
+          <img class="img img-fluid" 
+          src="https://i.postimg.cc/DwzFG9rr/Mashalinoresized-removebg-preview.png" alt="Marshalino-Jankowski">
         </div>
       </div>
     </div>
@@ -17,7 +20,7 @@
 export default {
   data() {
     return {
-      originalText: "Hi, I'm Marshalino Jankowski",
+      originalText: "Marshalino Jankowski",
       typedText: "",
       currentIndex: 0,
     };
@@ -43,18 +46,26 @@ export default {
 
 <style scoped>
 #home {
-    background:
-    linear-gradient(rgba(0, 0, 0, 0),
-    rgb(0, 0, 0)),
-    url(https://i.postimg.cc/GtngTPD8/1330458.jpg);
+    background-color:#f6f8fa;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
 }
-h1, h2{
-  text-shadow: 0px 0px 10px #4af7ff;
+h1{
+  font-weight: bold;
+}
+h2{
+  color: #758398;
+  text-transform: capitalize;
+}
+h3{
+  color: #758398;
+  text-transform: uppercase;
+  font-size:large;
+}
+.img{
+border-radius: 50%;
 }
 </style>
