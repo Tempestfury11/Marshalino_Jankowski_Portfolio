@@ -60,20 +60,22 @@ export default {
 .cyberpunk-navbar {
   background-color: transparent;
   padding: 10px 30px;
-  transition: background-color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .cyberpunk-navbar.sticky {
-  background-color: #758398;
+  background-color: white;
 }
 .navbar-brand,
 .nav-link {
     color: black;
     transition: all 0.3s ease-in-out;
+    font-weight: 600;
 }
 
 .nav-link:hover {
-    color: #4af7ff;
-    border-bottom:#4af7ff 1px solid;
+    color: #009bdf;
+    border-bottom:#009bdf 1px solid;
+    font-weight: 600;
 }
 
 .nav-item {

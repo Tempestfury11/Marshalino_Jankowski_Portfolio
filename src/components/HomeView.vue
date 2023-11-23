@@ -1,18 +1,38 @@
 <template>
   <section id="home">
-    <div class="container">
+    
+    <div class="container bg-con">
       <div class="row">
-        <div class="col-md-6 pt-5 pb-5">
+        <div class="col-sm-12 col-md-6 hometext">
+          <div class="col-header">
+            <h3 class="hello">Hello, my name is</h3>
+          </div>
+          <div class="col-main">
+            <h1 class="name">{{ typedText }}</h1>
+            <h2 class="position">Junior Web Developer</h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img class="img" 
+          src="https://i.postimg.cc/W1NYT0V1/red-removebg-preview.png" alt="Marshalino-Jankowski">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container sm-con">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img class="img" 
+          src="https://i.postimg.cc/W1NYT0V1/red-removebg-preview.png" alt="Marshalino-Jankowski">
+        </div>
+        <div class="col-sm-12 col-md-6">
           <h3>Hello, my name is</h3>
             <h1>{{ typedText }}</h1>
             <h2>Junior Web Developer</h2>
         </div>
-        <div class="col-md-6 pt-5 pb-5">
-          <img class="img img-fluid" 
-          src="https://i.postimg.cc/DwzFG9rr/Mashalinoresized-removebg-preview.png" alt="Marshalino-Jankowski">
-        </div>
       </div>
-    </div>
+    </div> 
   </section>
 </template>
 
@@ -47,25 +67,58 @@ export default {
 <style scoped>
 #home {
     background-color:#f6f8fa;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('https://i.postimg.cc/L5DGRDJ2/pngegg-1.png');
 }
-h1{
+.name{
+  font-size: 4rem;
   font-weight: bold;
 }
-h2{
-  color: #758398;
+.position{
+  color: #009bdf;
   text-transform: capitalize;
 }
-h3{
+.hello{
   color: #758398;
   text-transform: uppercase;
   font-size:large;
 }
 .img{
 border-radius: 50%;
+width: 100%;
+}
+.hometext{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: start;
+}
+.col-main{
+  margin-top: 50px;
+  margin-bottom:50px ;
+}
+.bg-con{
+  display: block;
+}
+
+.sm-con{
+  display: none;
+}
+
+@media only screen and (max-width: 767.5px){
+  .bg-con{
+  display: none;
+}
+
+.sm-con{
+  display: block;
+}
 }
 </style>

@@ -3,7 +3,7 @@
         <div class="/skills">
             <div class="container">
                 <div class="row">
-                    <h3>My Skills</h3>
+                    <h3 class="heading">My Skills</h3>
                     <div v-for="(skill, index) in skills" :key="index" class="col-md-4">
                         <div class="card mb-3 text-center" :style="{ boxShadow: cardShadow }">
                             <div class="card-body">
@@ -72,8 +72,8 @@ export default {
     justify-content: center;
     background-color: #f6f8fa;
 }
-h3 {
-    color: #758398;
+.heading {
+    color: #009bdf;
 }
 .card:hover {
     transform: scale(1.1);

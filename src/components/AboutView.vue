@@ -2,41 +2,35 @@
     <section id="about">
         <div class="/about">
             <div class="container">
-                <div class="row pt-5 pb-5 mt-5">
-                    <h3>About Me</h3>
-                    <h4>
+                <div class="row pt-4 pb-5 mt-5">
+                    <h3 class="heading-sub">About Me</h3>
+                    <h4 class="heading">
                         I am a Passionate Web Developer who has a AWS CCP and a
-                        FullStack Web Development course. Proficient in HTML, CSS,
-                        Bootstrap, JavaScript, MySQL, Node.js, Vue.js, React, WordPress,
-                        and SEO. Adept at designing and implementing systems, I
-                        excel as both a team player and lone wolf. Demonstrating
-                        active listening, problem-solving, and conflict management, I
-                        bring a goal-driven work ethic and openness to change.
+                        FullStack Web Development course. Adept at designing and implementing systems, I
+                        excel as both a team player and lone wolf.
                     </h4>
                     <div class="col-md-6 pt-5 pb-5">
-                        <h3>
+                        <h3 class="design">
                             I design professional & beautiful websites
                         </h3>
                     </div>
-                    <div class="col-md-6 pt-5 pb-5">
-                        <h3>Soft Skills</h3>
-                        <p>
+                    <div class="col-md-6">
+                        <h3 class="heading-sub">Soft Skills</h3>
+                        <p class="text">
                             Incorporating active listening, problem-solving, and conflict management, a successful
                             individual is self-managed, adaptable to change, goal-driven, and possesses a strong work ethic.
                             Openness to feedback completes this skill set, fostering continuous improvement and growth in
                             both personal and professional spheres.
                         </p>
-                        <div class="container">
+                        <div class="container text">
                             <div class="row">
-                                <!-- left -->
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 details">
                                     <p>City: Crawford, Cape Town</p>
                                     <p>Birth: 11/01/1998</p>
                                     <p>Criminal Record: None</p>
                                     <p>Gender: Male</p>
                                 </div>
-                                <!-- right -->
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 details">
                                     <p>Email: swiftyblue11@gmail.com</p>
                                     <p>Cell: 061 844 5578</p>
                                     <p>Home language: English</p>
@@ -83,17 +77,30 @@ export default {
     justify-content: center;
     background-color: #f6f8fa;
 }
-
-h3 {
-    color: #758398;
+.text{
+    font-size: 1.2rem;
 }
-
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.heading-sub {
+    color: #009bdf;
+}
+.details p{
+    margin: 0;
+}
+.design{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #009bdf;
+}
 .buttons button {
     margin: 5px;
     padding: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: #4af7ff 3px solid;
+    border: #009bdf 3px solid;
     color: black;
     background-color: transparent;
     cursor: pointer;
@@ -103,9 +110,8 @@ h3 {
 .buttons button:hover {
     margin: 5px;
     padding: 10px;
-    background-color: #4af7ff;
+    background-color: #009bdf;
     text-shadow: 0px 0px 10px black;
-    border: black 3px solid;
     color: white;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;

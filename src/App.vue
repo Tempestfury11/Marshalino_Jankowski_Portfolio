@@ -2,16 +2,18 @@
   <Navbar />
   <Home />
   <About />
-  <SkillsView/>
+  <Skills/>
   <Timeline />
+  <Testimonials/>
 </template>
   
 <script setup>
 import Navbar from './components/Navbar.vue';
 import Home from './components/HomeView.vue';
 import About from './components/AboutView.vue';
-import SkillsView from './components/SkillsView.vue';
+import Skills from './components/SkillsView.vue';
 import Timeline from './components/Timeline.vue';
+import Testimonials from './components/TestimonialsView.vue';
 </script>
   
 <style>

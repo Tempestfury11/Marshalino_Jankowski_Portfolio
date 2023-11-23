@@ -2,20 +2,13 @@
     <section id="testimonials">
         <div class="container">
             <div class="row">
-                <h2 class="section-title">Testimonials</h2>
-                <div class="col-md-4 mt-5" v-for="(TestimonialsArray, index) in TestimonialsArray"
-                    :key="index">
-                    <div class="testimonial-grid">
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <p>
-                                    {{ TestimonialsArray.text }}
-                                </p>
-                                <p class="testimonial-position">
-                                    {{ TestimonialsArray.position }}
-                                </p>
-                                <p class="testimonial-author">{{ TestimonialsArray.name }}</p>
-                            </div>
+                <h3 class="heading">My Testimonials</h3>
+                <div v-for="(TestimonialsArray, index) in TestimonialsArray" :key="index" class="col-md-4">
+                    <div class="card mb-3 text-center" :style="{ boxShadow: cardShadow }">
+                        <div class="card-body">
+                            <p class="text">{{ TestimonialsArray.text }}</p>
+                            <p class="position">{{ TestimonialsArray.position }}</p>
+                            <p class="name">{{ TestimonialsArray.name }}</p>
                         </div>
                     </div>
                 </div>
@@ -33,45 +26,46 @@ export default {
                     id: 1,
                     position: "Lecturer and Front End Developer",
                     text:
-                    "Marshalino is a very consistent developer. He gets quite excited when he sees an opportunity to participate and show off his abilities. He is always challenging himself to write complex ideas to improve his coding skills. I am certain Marshalino will continue to do well.",
+                        "Marshalino is a very consistent developer. He gets quite excited when he sees an opportunity to participate and show off his abilities. He is always challenging himself to write complex ideas to improve his coding skills. I am certain Marshalino will continue to do well.",
                     name: "Jason Wandrag",
                 },
                 {
                     id: 2,
                     position: "Head of Curriculum and Learning",
                     text:
-                    "Marshalino is a diligent student who pays particular attention to detail. His mastery of HTML, CSS and Bootsrap has proved him to be among the prospective top developers. His work ethics are above board. I highly recommend him for any opportunities within your organisation.",
+                        "Marshalino is a diligent student who pays particular attention to detail. His mastery of web development has proved him to be among the prospective top developers. His work ethics are above board. I highly recommend him for any opportunities within your organisation.",
                     name: "Godwin Dzvapatsva",
                 },
                 {
                     id: 3,
                     position: "Senior Coding Academy Lecturer",
                     text:
-                    "Marshalino should be happy with his progress and understanding of the lesson content as he is doing very well. Marshalino has proven to have a detailed grasp of the HTML,CSS & Bootstrap material we have been studying. He is an expert at describing what he has done.",
+                        "Marshalino should be happy with his progress and understanding of the lesson content as he is doing very well. Marshalino has proven to have a detailed grasp of the HTML,CSS & Bootstrap material we have been studying. He is an expert at describing what he has done.",
                     name: "Joel Tshimanga Mukanya",
                 },
                 {
                     id: 4,
                     position: "Web Development Intern - Code Infinity",
                     text:
-                    "Marshalino Jankowski is a great person to be around. He always lifts the mood which puts me in a better working mood thus increasing my work ethic and productivity. He is a team player and doing what must be done for the best of the team. He is extremely hard working. I can say Marshalino an amazing person and will be an asset to any company.",
+                        "Marshalino Jankowski is a great person to be around. He always lifts the mood which puts me in a better working mood thus increasing my work ethic and productivity. He is a team player and doing what must be done for the best of the team. He is extremely hard working and an amazing person and will be an asset to any company.",
                     name: "Ra'ees Benny",
                 },
                 {
                     id: 5,
                     position: "Technician - Spinnaker Software",
                     text:
-                    "Marshalino Jankowski is a hardworking and dedicated person with a can-do attitude. In high-pressure circumstances, he leaps into action and assumes control. I have observed him working hard to advance both himself and his work. He is approachable and entertaining but also capable of taking charge when necessary",
+                        "Marshalino Jankowski is a hardworking and dedicated person with a can-do attitude. In high-pressure circumstances, he leaps into action and assumes control. I have observed him working hard to advance both himself and his work. He is approachable and entertaining but also capable of taking charge when necessary",
                     name: "Saleem Ariefdien",
                 },
                 {
                     id: 6,
                     position: "Support Engineer - Itemate Solutions",
                     text:
-                    "I would like to formally recommend Marshalino for his consistent work. He has the ability to complete tasks timelessly and effectively. His planning before taking action is always consistent and sharing ideas, steps for planning a website. I know that Marshalino has the ability and skills to be an excellent addition to the company",
+                        "I would like to formally recommend Marshalino for his consistent work. He has the ability to complete tasks timelessly and effectively. His planning before taking action is always consistent and sharing ideas, steps for planning a website. I know that Marshalino has the ability and skills to be an excellent addition to the company",
                     name: "Emile Van Wyk",
                 },
             ],
+            cardShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         };
     }
 };
@@ -79,33 +73,38 @@ export default {
   
 <style scoped>
 #testimonials {
-    background-color: #1c1c1c;
-    color: #4af7ff;
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: #f6f8fa;
+}
+.text{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.position{
+    color: #009bdf;
+    border-bottom: #758398 1px solid;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.name{
+    color: black;
+    margin: 0;
+    font-size: 1.1rem;
+}
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.testimonial-item {
-    background-color: #1c1c1c;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 102, 162, 0.5);
-    padding: 20px;
-    border: #4af7ff 3px solid;
+.heading{
+    color: #009bdf;
 }
 
-.testimonial-content {
-    font-size: 18px;
-}
-
-.testimonial-position {
-    margin-top: 15px;
-    font-size: 16px;
-    color: #4af7ff;
-}
-.testimonial-author {
-    margin-top: 15px;
-    font-size: 16px;
+.card {
+    border: none;
 }
 </style>
