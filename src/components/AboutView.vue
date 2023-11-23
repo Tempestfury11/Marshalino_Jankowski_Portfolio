@@ -2,7 +2,7 @@
     <section id="about">
         <div class="/about">
             <div class="container">
-                <div class="row pt-5 mt-5">
+                <div class="row pt-5 pb-5 mt-5">
                     <h3>About Me</h3>
                     <h4>
                         I am a Passionate Web Developer who has a AWS CCP and a
@@ -17,23 +17,6 @@
                         <h3>
                             I design professional & beautiful websites
                         </h3>
-                        <h4>UI/UX DESIGN</h4>
-                        <p>
-                            An effective UI/UX is what captures attention and spreads a clear message. I make sure the
-                            design is innovative and neat with all of this.
-                        </p>
-                        <h4>WEB DEVELOPMENT</h4>
-                        <p>
-                            If you are looking for a developer who’ll take over the research and development of your
-                            website, I am a well-established professional to help you with this.
-                        </p>
-                        <h4>
-                            APP DEVELOPMENT
-                        </h4>
-                        <p>
-                            If you are looking for a user-friendly app that will attract more mobile users, I can help you
-                            design and build a platform with the latest and trendiest look and feel.
-                        </p>
                     </div>
                     <div class="col-md-6 pt-5 pb-5">
                         <h3>Soft Skills</h3>

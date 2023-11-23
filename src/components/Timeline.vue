@@ -1,7 +1,7 @@
 <template>
     <section id="timeline">
         <div class="container">
-            <div class="row">
+            <div class="row pt-5">
                 <div class="col-md-12">
                     <h3>Timeline</h3>
                     <div class="accordion" id="accordionExample">
@@ -112,12 +112,16 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f6f8fa;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0),
+    rgb(255, 255, 255)),
+    url(https://i.postimg.cc/qqj70ChP/christin-hume-Hcfwew744z4-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-
 h3,
 h4 {
-    color: #758398;
+    color: white;
 }
 
 .buttons button {
