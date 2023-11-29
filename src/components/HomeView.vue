@@ -12,6 +12,7 @@
             <h2 class="position">Junior Web Developer</h2>
           </div>
         </div>
+        
         <div class="col-sm-12 col-md-6">
           <img class="img" 
           src="https://i.postimg.cc/W1NYT0V1/red-removebg-preview.png" alt="Marshalino-Jankowski">
@@ -68,7 +69,6 @@ export default {
 #home {
     background-color:#f6f8fa;
     background-size: contain;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
