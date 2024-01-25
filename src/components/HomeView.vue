@@ -14,7 +14,7 @@
         </div>
         
         <div class="col-sm-12 col-md-6">
-          <img class="img" 
+          <img class="img pt-3" 
           src="https://i.postimg.cc/W1NYT0V1/red-removebg-preview.png" alt="Marshalino-Jankowski">
         </div>
       </div>

@@ -17,10 +17,6 @@
                                 :href="project.liveLink">
                                     <button>View Live</button>
                                 </a>
-                                <a target="_blank" 
-                                :href="project.githubLink">
-                                    <button>View GitHub</button>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -37,19 +33,45 @@ export default {
             projects: [
                 {
                     id: 1,
-                    title: 'Ali-Express',
+                    title: 'Ali-Express Fullstack Clone',
                     image: 'https://i.postimg.cc/G2myy16F/aliexpress.png',
-                    description: 'Full Stack Ecommerce',
+                    description: 'Nuxt',
                     liveLink: 'https://harmonious-caramel-8a4644.netlify.app/',
-                    githubLink: 'https://github.com/Tempestfury11/AliExpressClone',
                 },
                 {
                     id: 2,
-                    title: 'SoapYesterday',
+                    title: 'SoapYesterday Movie App',
                     image: 'https://i.postimg.cc/s2bLH4Yy/soaper.png',
-                    description: 'Vue Movie App',
+                    description: 'Vue',
                     liveLink: 'https://soapyesterday.netlify.app/',
-                    githubLink: 'https://github.com/Tempestfury11/SoapYesterday',
+                },
+                {
+                    id: 3,
+                    title: 'ToDo App',
+                    image: 'https://i.postimg.cc/HnGHSgfq/To-Do-React.png',
+                    description: 'React',
+                    liveLink: 'https://legendary-toffee-42ad71.netlify.app/',
+                },
+                {
+                    id: 4,
+                    title: 'ToDo App',
+                    image: 'https://i.postimg.cc/Jnwm48Pp/TodoVue.png',
+                    description: 'HTML CSS JS',
+                    liveLink: 'https://symphonious-cheesecake-7f5d05.netlify.app/',
+                },
+                {
+                    id: 5,
+                    title: 'Age Converter',
+                    image: 'https://i.postimg.cc/XvbHJnrv/Age-Calculator.png',
+                    description: 'HTML CSS JS',
+                    liveLink: 'https://startling-parfait-d201e2.netlify.app/',
+                },
+                {
+                    id: 6,
+                    title: 'HEX To RGB',
+                    image: 'https://i.postimg.cc/t4q3s7X7/HEX2RGB.png',
+                    description: 'HTML CSS JS',
+                    liveLink: 'https://eclectic-sunflower-2c3e9e.netlify.app/',
                 },
             ],
             cardShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',

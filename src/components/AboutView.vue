@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import cvFile from '../assets/CV.pdf';
+import cvFile from '../assets/MarshalinoJankowskiCV.pdf';
 export default {
     methods: {
         downloadCV() {
