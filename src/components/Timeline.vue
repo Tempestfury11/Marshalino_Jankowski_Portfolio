@@ -5,6 +5,9 @@
                 <div class="row pt-5 pb-5">
                     <div class="col-md-6 timeline-card">
                         <h3 class="heading-sub">My Experience</h3>
+                        <p class="text">
+                            Transitioning from coding at LifeChoices to interning at LC Studio, I evolved into a Junior Web Developer, creating solutions for diverse clients.
+                        </p>
                         <div class="card" v-for="(experience, index) in experiences" :key="index">
                             <h6><span class="date">{{ experience.date }}</span></h6>
                             <p class="role">{{ experience.role }}</p>
@@ -17,7 +20,7 @@
                             From understanding your requirements, designing a blueprint and delivering the final product, I do everything that falls in between these lines.
                         </p>
                         <div class="card" v-for="(roles, index) in roles" :key="index">
-                            <span class="icon" v-html="roles.img"></span>
+                            <span class="" v-html="roles.img"></span>
                             <p class="role">{{ roles.role }}</p>
                             <p class="text">{{ roles.description }}</p>
                         </div>
@@ -33,6 +36,12 @@ export default {
     data() {
         return {
             experiences: [
+                {
+                    date: "12/2023 - 02/2024",
+                    role: "SEO/Wordpress Intern @ PearlLemon",
+                    description:
+                        "Collaborated with a dynamic team to develop and maintain WordPress websites. Working with the SEO team to integrate on-page SEO best practices. conducted regular website updates and optimizations",
+                },
                 {
                     date: "12/2022 - 12/2023",
                     role: "Junior Web Developer @ CloudZA",
@@ -54,22 +63,28 @@ export default {
             ],
             roles: [
                 {
-                    img: '<i class="fa-solid fa-pen-ruler" style="font-size: 32px;"></i>',
+                    img: '<i class="fa-solid fa-pen-ruler" style="font-size: 28px;"></i>',
                     role: "UI/UX DESIGN",
                     description:
-                        "An effective UI/UX is what captures attention and spreads a clear message. I make sure the design is innovative and neat with all of this",
+                        "An effective UI/UX is what captures a users attention and spreads a clear message for them to see. I make sure the design is innovative and neat with having a responsive and clean design",
                 },
                 {
-                    img: '<i class="fa-solid fa-laptop-code" style="font-size: 32px;"></i>',
+                    img: '<i class="fa-solid fa-laptop-code" style="font-size: 28px;"></i>',
                     role: "WEB DEVELOPMENT",
                     description:
-                        "If you are looking for a developer who’ll take over the research and development of your website, I am a well-established professional to help you with this.",
+                        "If you are looking for a developer who’ll take over the research and development of your website, I am a well-established professional with vast expriences and solutions to help you bring your vision to reality",
                 },
                 {
-                    img: '<i class="fa-solid fa-mobile-screen" style="font-size: 32px;"></i>',
+                    img: '<i class="fa-solid fa-mobile-screen" style="font-size: 28px;"></i>',
                     role: "APP DEVELOPMENT",
                     description:
-                        "If you are looking for a user-friendly app that will attract more mobile users, I can help you design and build a platform with the latest and trendiest look and feel.",
+                        "If you want a user-friendly app which is responsive across multiple screens which will attract more mobile users and gain more engagement, I can help you design and build a platform with the latest and trendiest look and feel",
+                },
+                {
+                    img: '<i class="fa-brands fa-aws" style="font-size: 28px;"></i>',
+                    role: "AMAZON WEB SERVICES",
+                    description:
+                        "Using AWS can to enhance web development, app development, and UI/UX design. Leveraging AWS services like EC2 for scalable computing, S3 for efficient storage, and Lambda for serverless functions, I can help create versatile and responsive solutions, optimizing performance and user experience",
                 },
             ],
         };

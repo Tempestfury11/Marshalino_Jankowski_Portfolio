@@ -9,10 +9,22 @@
                         FullStack Web Development course. Adept at designing and implementing systems, I
                         excel as both a team player and lone wolf.
                     </h4>
-                    <div class="col-md-6 pt-5 pb-5">
-                        <h3 class="design">
-                            I design professional & beautiful websites
-                        </h3>
+                    <div class="col-md-6 justify-content-center align-items-center text-center">
+                        <div class="card">
+                            <img src="https://i.postimg.cc/sD3NhC4H/Screenshot-186-removebg-preview.png"
+                        class="img-fluid"
+                        alt="Marshalino-Jankowski-Logo">
+                        </div>
+                        
+                        <div class="buttons">
+                            <a target="_blank" href="https://www.linkedin.com/in/marshalino-jankowski-385861247/">
+                                <button>LinkedIn</button>
+                            </a>
+                            <a target="_blank" href="https://github.com/Tempestfury11">
+                                <button>GitHub</button>
+                            </a>
+                            <button @click="downloadCV">Download CV</button>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <h3 class="heading-sub">Soft Skills</h3>
@@ -34,16 +46,6 @@
                                     <p>Email: swiftyblue11@gmail.com</p>
                                     <p>Cell: 061 844 5578</p>
                                     <p>Home language: English</p>
-                                    <p>Second language: Afrikaans</p>
-                                </div>
-                                <div class="buttons">
-                                    <a target="_blank" href="https://www.linkedin.com/in/marshalino-jankowski-385861247/">
-                                        <button>LinkedIn</button>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/Tempestfury11">
-                                        <button>GitHub</button>
-                                    </a>
-                                    <button @click="downloadCV">Download CV</button>
                                 </div>
                             </div>
                         </div>
@@ -76,6 +78,10 @@ export default {
     align-items: center;
     justify-content: center;
     background-color: #f6f8fa;
+}
+.card{
+    border: none;
+    background-color: transparent;
 }
 .text{
     font-size: 1.2rem;
